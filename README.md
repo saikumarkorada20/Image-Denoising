@@ -1,6 +1,6 @@
 # Denoising
 
-Code for  NTIRE 2019 Real Image Denoising Challenge
+Code for  NTIRE 2020 Real Image Denoising Challenge
 
 ## Dependencies
 
@@ -8,10 +8,6 @@ Code for  NTIRE 2019 Real Image Denoising Challenge
 - pytorch >= 1.0
 - Numpy
 - h5py
-
- Please download model from google drive and put it under 'logs/RDN_e40_16'.
-[[model]](https://drive.google.com/open?id=1DRVUfMygxFhTvw4g-5eWvbeTgnN70gML)
-
 
 ## Training Instruction
 
@@ -27,6 +23,6 @@ python train.py    --prepocess False
 
 ## Test Instruction
 
-#Please put 'BenchmarkNoisyBlocksSrgb.mat' under 'data/' folder.
+#Please put 'sidd_valid_noisy_srgb.mat' under 'data/' folder.
 
-python test.py  --name RDN_e40_16  --which_model final_net.pth  --test_path data/BenchmarkNoisyBlocksSrgb.mat
+python test.py  --name RDN_e40_16  --which_model final_net.pth  --test_path data/sidd_valid_noisy_srgb.mat
